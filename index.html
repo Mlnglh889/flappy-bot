@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feather Flappy Bot v5 — Download</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;background:#0b0f14;color:#e6edf3;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 18px 56px}
+  h1{font-size:22px;margin:0 0 6px}
+  p.sub{margin:0 0 22px;color:#8b949e;font-size:14px}
+  .card{background:#111820;border:1px solid #1f2a36;border-radius:12px;padding:16px 16px 6px;margin:0 0 16px}
+  h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:#8b949e;margin:0 0 12px;font-weight:600}
+  a.dl{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;margin:0 0 10px;
+       background:#1b2530;border:1px solid #263241;border-radius:10px;color:#e6edf3;text-decoration:none;font-weight:600}
+  a.dl small{display:block;font-weight:400;color:#8b949e;font-size:12px;margin-top:2px}
+  a.dl span.sz{color:#58a6ff;font-size:12px;white-space:nowrap}
+  a.dl:active{background:#22303d}
+  ol{padding-left:20px;margin:8px 0 16px}
+  li{margin:0 0 8px}
+  code{background:#1b2530;padding:2px 6px;border-radius:4px;font-size:13px}
+  .note{border-left:3px solid #d29922;padding:8px 0 8px 12px;color:#c9d1d9;font-size:14px;margin:0 0 14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Feather Flappy Bot v5</h1>
+  <p class="sub">quest.feather.games — tap otomatis, skor tetap diverifikasi situs.</p>
+
+  <div class="card">
+    <h2>Download file</h2>
+    <a class="dl" href="https://raw.githubusercontent.com/Mlnglh889/flappy-bot/main/flappy-userscript.user.js" download="flappy-userscript.user.js">
+      <span>flappy-userscript.user.js<small>Untuk HP / Mises — lewat Tampermonkey</small></span>
+      <span class="sz">7 KB</span>
+    </a>
+    <a class="dl" href="https://raw.githubusercontent.com/Mlnglh889/flappy-bot/main/flappy-bot-paste.txt" download="flappy-bot-paste.txt">
+      <span>flappy-bot-paste.txt<small>Untuk desktop — paste ke Console (1 baris)</small></span>
+      <span class="sz">8.5 KB</span>
+    </a>
+    <a class="dl" href="https://raw.githubusercontent.com/Mlnglh889/flappy-bot/main/flappy-bot.js" download="flappy-bot.js">
+      <span>flappy-bot.js<small>Source lengkap, gampang dibaca/diedit</small></span>
+      <span class="sz">6.4 KB</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Pasang di Mises (sekali saja)</h2>
+    <ol>
+      <li>Mises → ikon <b>puzzle</b> di bar bawah → <b>Extensions</b>.</li>
+      <li>Buka <b>Chrome Web Store</b> → cari <b>Tampermonkey</b> → <b>Add to Chrome</b> → OK.</li>
+      <li>Buka file <b>flappy-userscript.user.js</b> yang sudah didownload, atau link raw-nya langsung.</li>
+      <li>Tampermonkey muncul halaman Install → tap <b>Install</b>.</li>
+      <li>Buka quest.feather.games → login X → rak → <b>GAMES</b> → tab <b>Play</b> → tap sekali sampai burung terbang.</li>
+    </ol>
+    <p class="note">Badge kecil <code>BOT 12 | best 0 | 60fps</code> di kiri atas area game = bot aktif. Jangan pindah tab saat jalan — tab belakang dibekukan browser.</p>
+  </div>
+
+  <div class="card">
+    <h2>Pakai di desktop</h2>
+    <ol>
+      <li>Buka game, tap sekali sampai burung terbang.</li>
+      <li>F12 → Console → ketik <code>allow pasting</code> → Enter.</li>
+      <li>Buka <b>flappy-bot-paste.txt</b>, copy semua, paste ke Console, Enter.</li>
+      <li>Kontrol: <code>featherFlapBot.status()</code> / <code>.stop()</code> / <code>.start()</code> / <code>.cap = 990</code></li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
